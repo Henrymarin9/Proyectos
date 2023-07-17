@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// Dimensiones
+$width : 400px;
+$heigth : 500px;
+
+html{
+    font-size: 18px;
+}
+
+
+.Body{
+    & .section .article{
+        width: $width;
+        height: $heigth;
+        border: 1px solid black;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100px repeat(1, 1fr);
+    }
+}
+
